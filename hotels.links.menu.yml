@@ -1,0 +1,13 @@
+hotels.admin:
+  title: "Liste des hotels"
+  description: "Liste des hôtels"
+  parent: system.admin_config_development
+  route_name: hotels.list
+  weight: 100
+
+hotels.admin_settings_form:
+  title: "Paramètres de l'API hôtels"
+  description: "Gestion des API amadeus"
+  route_name: hotels.admin_settings_form
+  parent: system.admin_config_development
+  weight: 99

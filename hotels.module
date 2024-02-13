@@ -1,0 +1,21 @@
+<?php
+/**
+ * @file
+ * Main module file with hooks implementations.
+ */
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+
+/**
+ * Implements hook_theme().
+ */
+function hotels_theme($existing, $type, $theme, $path) {
+  return [
+    'hotels_list_template' => [
+      'variables' => [
+        'hotels' => NULL
+      ],
+    ],
+  ];
+}
